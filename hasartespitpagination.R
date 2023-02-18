@@ -81,7 +81,7 @@ View(main.frame)
 
 
 options.city <- search_city$findChildElements(using = "xpath","option")
-for (city in 11:length(options.city)) {
+for (city in 1:length(options.city)) {
   temp.options.city <- options.city[[city]]
   temp.options.city$clickElement()
   options.ilce <- search_ilce$findChildElements(using = "xpath","option")
@@ -93,7 +93,7 @@ for (city in 11:length(options.city)) {
       temp.options.mahalle <- options.mahalle[[mahalle]]
       temp.options.mahalle$clickElement()
       sorgula.button$clickElement()
-      Sys.sleep(1.5)
+      Sys.sleep(1.5) ##Internet hızına göre burayı ayarlayabilirsiniz. 
       #select all
       qresult<- rs.client$findElements(using = "name", value = "QueryResult_length")
       qresult.options <- qresult[[1]]$findChildElements(using = "xpath","option")
@@ -105,7 +105,7 @@ for (city in 11:length(options.city)) {
       page <- read_html(source.unlist)
       html_table(page)[1] -> temp.frame
       rbind(temp.frame[[1]],main.frame) -> main.frame
-      write.csv(main.frame, "~/main.frame11.csv")
+      write.csv(main.frame, "~/main.frame1.csv") ### Verinin kaydedileceği konumu buraya belirtebilirsiniz.
       
     }
   }
