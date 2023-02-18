@@ -3,7 +3,7 @@
 Hasar Tespit 
 Hasar Tespit Veri Tabanı Otomatizasyon:
 
-Kod R dilinde "https://hasartespit.csb.gov.tr" adresindeki veriyi çekmek için tasarlanmıştır. Satır ve satır çalıştırılması gerekir ve R programı temelinde yazılmıştır. 
+Kod R dilinde "https://hasartespit.csb.gov.tr" adresindeki veriyi çekmek için tasarlanmıştır. Satır ve satır çalıştırılması gerekir ve R programlama dili temelinde yazılmıştır. 
 
 
 Kullanım için öneriler:
